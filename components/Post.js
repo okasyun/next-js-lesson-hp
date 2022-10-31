@@ -3,7 +3,7 @@ import Link from "next/link";
 // 何で波括弧を使う？
 // Object Destructing（分割代入）
 // const post = props.postと同じ
-const Post = ({ post }) => {
+export default function Post({ post }) {
   return (
     <div>
       <span>{post.id}</span>
@@ -15,6 +15,4 @@ const Post = ({ post }) => {
       </Link>
     </div>
   );
-};
-
-export default Post;
+}
