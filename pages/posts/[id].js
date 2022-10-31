@@ -51,7 +51,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // 各idのデータを取得
-  const { post: post } = await getPostData(params.id);
+  const post = await getPostData(params.id);
   return {
     props: {
       post,
